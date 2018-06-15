@@ -1,0 +1,402 @@
+/*
+Theme Name: IlMortaretto
+Author: Gabriel Antonelli
+Author URI: https://www.gabrielantonelli.it
+Description: Wordpress theme created for the website ilmortaretto.it
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ilmortaretto
+Tags: two-columns, right-sidebar, featured-images, footer-widgets
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face{
+    font-family: "Antonio-Regular";
+    src: url("Antonio-Regular.ttf");
+}
+
+body{
+    font-size:20px;
+    font-family:Lato, SansSerif;
+}
+
+p {
+    font-size:1.1em;
+    line-height:1.6em;
+    margin-bottom:1.4em;
+}
+
+a {
+    color: #8e0c1b;
+}
+
+a:hover, a:focus{
+    color:#561a21;
+}
+
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8e0c1b;
+    border-color: #8e0c1b;
+
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+    background-color: #561a21;
+    border-color: #561a21;
+}
+
+ul.pagination li a{
+    color:#8e0c1b;
+}
+
+ul.pagination li a:hover, a:focus{
+    color:#561a21;
+}
+
+ul.pagination li.active span{
+    background: #8e0c1b;
+    border:1px solid #8e0c1b;
+}
+
+h2.spazio-sotto{
+    margin-bottom:1em;
+}
+
+/*
+ *		NAVBAR
+*/
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 0.9em;
+    background-color: #8e0c1b;
+    border-width: 0px;
+    border-radius: 0px;
+    display:block;
+
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #561a21;
+    background-color: #8e0c1b;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: #8e0c1b;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #8e0c1b;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+
+ul.dropdown-menu>li>a{
+    color:white !important;
+    font-size:1.1em;
+}
+
+@media(min-width:768px) {
+    #custom-bootstrap-menu{
+        height:86px;
+        padding-top:13px;
+    }
+
+    #custom-bootstrap-menu.navbar-default .nav-justified {
+        width: 98%;
+    }
+
+    #custom-bootstrap-menu.navbar-default.nav-justified > li {
+        float: none;
+    }
+
+    #custom-bootstrap-menu.navbar-default {
+        background: #8e0c1b;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+        background-color: #8e0c1b;
+    }
+    ul.navbar-right>li>a{
+        padding-top:23px;
+        padding-bottom:0;
+        background: #8e0c1b;
+    }
+    ul.dropdown-menu>li>a{
+        color:black !important;
+        font-size:1.1em;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
+/*
+        SOTTO NAVBAR
+ */
+
+#sotto-navbar{
+    margin-top:110px;
+    margin-bottom:30px;
+}
+
+#sotto-navbar-left, #sotto-navbar-right{
+    padding-left:0;
+    padding-right:0;
+    margin-top:8px;
+}
+
+h1.sotto-logo{
+    font-family: Antonio-Regular;
+    font-size:1.1em;
+    margin:0;
+}
+p.conto-alla-rovescia{
+    font-size:0.8em;
+    color: #561a21;
+    margin:0;
+}
+
+@media(min-width:768px) {
+    #sotto-navbar{
+        margin-top:86px;
+    }
+}
+
+/*
+        PRIMA PAGINA - TITOLONE HOMEPAGE ULTIMO ARTICOLO
+*/
+
+
+#prima-pagina{
+    padding-bottom: 46px;
+}
+
+#pannello-prima-pagina{
+    display:block;
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:25px;
+    padding-right: 25px;
+    background-color:#e9ebee;
+}
+
+#prima-pagina h2{
+    font-size:2.2em;
+    margin-top:0;
+}
+
+
+/*
+        CONTENUTO PRINCIPALE
+ */
+
+#contenuto_principale h1,h2,h3{
+    font-family:Antonio-Regular, SansSerif !important;
+}
+
+#contenuto_principale h1{
+    font-size:2.4em;
+}
+
+#contenuto_principale h1.titolo-pagina{
+    font-size:2em;
+    margin-bottom:2em;
+}
+
+#contenuto_principale h2{
+    font-size:2em;
+    margin-top:0;
+}
+
+#contenuto_principale h3{
+    font-size:1.6em;
+    margin-top:2em;
+    margin-bottom:1em;
+}
+
+#contenuto_principale h4{
+    font-size:1.2em;
+}
+
+p.info-sottotitolo{
+    font-size:0.7em;
+    color:#6f6f6e;
+}
+
+/*
+        ARTICOLI
+ */
+
+div.post-header{
+    margin-bottom:46px;
+}
+
+div.post-body img{
+    border: 2px solid #e9ebee;
+    padding:5px;
+}
+
+div.post-body h2{
+    margin-top:1.5em !important;
+}
+
+/*
+        AUTORE
+ */
+
+div.author{
+    font-size:0.9em;
+    background-color:#e9ebee;
+    padding:20px;
+    margin-top:46px;
+}
+
+div.author h3.nome-autore{
+    margin-top:0.5em !important;
+    color:#8e0c1b;
+    font-size:1em;
+}
+
+p.bio-autore{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:1.1em;
+}
+
+img.avatar-autore{
+    border:10px solid white;
+    display:block;
+    margin:auto;
+}
+
+p.ruolo-autore{
+    font-size:0.9em;
+    display:block;
+    text-align:center;
+    font-weight:bold;
+    color:#8e0c1b;
+    margin-top:5px;
+}
+
+ul.social-autore{
+    list-style-type:none;
+    font-size:2em;
+    padding:0;
+
+}
+
+ul.social-autore>li{
+    display:inline;
+    margin-right:20px;
+}
+
+ul.social-autore>li>a {
+    color:#333;
+}
+
+ul.social-autore>li>a:hover{
+    color:#561a21;
+}
+
+/*
+        COMMENTI
+ */
+#disqus_thread{
+    margin-top:46px;
+}
+
+/*
+        PREVIEW ARTICOLI SIDEBAR
+ */
+.sidebar-post-preview{
+    font-size: 0.9em;
+}
+
+.sidebar-post-preview a span.sidebar-testo-preview{
+    color:black;
+}
+
+.sidebar-title{
+    margin-top:1em !important;
+    margin-bottom:10px !important;
+    padding-bottom:5px;
+    border-bottom:2px solid #8e0c1b;
+}
+
+
+/*
+        RICERCA
+ */
+#contenuto_principale h2.titoli-ricerca{
+    font-size:1.7em !important;
+}
+
+p.preview-testo{
+    font-size:0.9em;
+}
+
+/*
+        FOOTER
+ */
+
+footer{
+    padding-top: 3.7em;
+    background: #8e0c1b;
+    color:white;
+    margin-top:100px;
+}
+
+footer ul{
+    list-style: none;
+    font-size:0.9em;
+    padding:0;
+}
+
+footer a{
+    color:white;
+}
+
+footer a:hover{
+    color:white;
+}
+
+p.copyrights{
+    padding-top:70px;
+    font-size:0.7em;
+}
+
+ul.social-website {
+    list-style-type:none;
+    font-size:2em;
+    padding:0;
+
+}
+
+ul.social-website >li{
+    display:inline;
+    margin-right:20px;
+}
+
+#footer ul.social-website >li>a{
+    color:#FFFFFF;
+}
+
+ul.social-website>li>a:hover{
+    color:#561a21;
+}
